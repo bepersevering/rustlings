@@ -31,5 +31,5 @@ fn main() {
     }
 
     // TODO: Print the value of `JobStatus.jobs_done`.
-    println!("Jobs done: {}", todo!());
+    println!("Jobs done: {}", status.lock().unwrap().jobs_done);
 }
